@@ -14,7 +14,7 @@ Below we have covered the Corn smart contract in detail skipping the OpenZeppeli
 
 The Corn smart contract drives the business logic and is open sourced for review. Let's jump right into the smart contract code. We'll go through code in logical blocks.
 
-The first Corn token deployed to main net is Corn, it can be found on [Etherscan](https://etherscan.io/address/?/code).
+The first Crop token deployed to Kovan testnet is Corn, it can be found on [Etherscan](https://kovan.etherscan.io/address/0xEA4fB84Eef742690790D5E8d623b8CdE2d49E7c2#code).
 
 Compilation Parameters: Solidity v0.6.9+commit.3e3065ac. Optimizations Enabled
 
@@ -103,7 +103,7 @@ The Corn token is both an `ERC777` contract but also implements `IERC777Recipien
 using SafeMath for uint256;
 ```
 
-This is the first line of contract and is an extremely important security feature. We use OpenZeppelin SafeMath for all arithmetic operations to avoid Integer Overflow and Underflow attacks as described here: https://consensys.github.io/smart-contract-best-practices/known_attacks/#integer-overflow-and-underflow
+This is the first line of contract and is an extremely important security feature. We use OpenZeppelin SafeMath for all arithmetic operations to avoid [Integer Overflow and Underflow attacks as described here](https://consensys.github.io/smart-contract-best-practices/known_attacks/#integer-overflow-and-underflow)
 
 ## Security: Our Modifiers
 
