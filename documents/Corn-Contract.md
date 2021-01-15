@@ -1,5 +1,7 @@
 # Corn Smart Contract
 
+![CORN](https://farmland-game.github.io/logo.png)
+
 All extensions on the base tokens are done through the ERC-777 "Operators". This feature allows other ethereum addresses to operate on behalf of your account. Instead of another address, we've used this functionality to grant the Corn smart contract the operator role.
 
 This means that we can write additional smart contracts to extend base functionality of LAND token. The first cross-smart contract functionality written in this manner is Corn, our first, mintable Corn token.
