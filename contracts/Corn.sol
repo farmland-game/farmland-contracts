@@ -211,7 +211,11 @@ contract Corn is ERC777, IERC777Recipient, ReentrancyGuard {
         uint256 amount,
         uint256 burnedAmountDecrease
     );
-    event Composted(address sender, address targetAddress, uint256 amount);
+    event Composted(
+        address sender,
+        address targetAddress,
+        uint256 amount
+    );
     event Harvested(
         address sender,
         uint256 blockNumber,
@@ -448,12 +452,11 @@ contract Corn is ERC777, IERC777Recipient, ReentrancyGuard {
         // 24 hours - min before starting to receive rewards
         // 28 days - max for waiting 28 days (The function returns PERCENT (10000x) the multiplier for 4 decimal accuracy
         uint256 blockDiff =
-            block
-                .number
-                .sub(targetBlockNumber)
-                .mul(maturityBoostExtension)
-                .div(_endMaturityBoost)
-                .add(_percentMultiplier);
+            block.number
+            .sub(targetBlockNumber)
+            .mul(maturityBoostExtension)
+            .div(_endMaturityBoost)
+            .add(_percentMultiplier);
 
         uint256 timeMultiplier = Math.min(maxMaturityBoost, blockDiff); // Min 1x, Max 3x
         return timeMultiplier;
@@ -523,9 +526,7 @@ contract Corn is ERC777, IERC777Recipient, ReentrancyGuard {
         // Compost/Maturity for both address & network
         // Note that we multiply both ratios by the ratio multiplier before dividing. For tiny CROP/LAND burn ratios.
         uint256 globalRatio =
-            globalCompostedAmount.mul(_ratioMultiplier).div(
-                globalAllocatedAmount
-            );
+            globalCompostedAmount.mul(_ratioMultiplier).div(globalAllocatedAmount);
         return globalRatio;
     }
 
@@ -564,10 +565,9 @@ contract Corn is ERC777, IERC777Recipient, ReentrancyGuard {
     {
         uint256 cropBalance = balanceOf(targetAddress);
         uint256 harvestAmount = getHarvestAmount(targetAddress, block.number);
-        uint256 addressMaturityMultiplier =
-            getAddressMaturityMultiplier(targetAddress);
-        uint256 addressCompostMultiplier =
-            getAddressCompostMultiplier(targetAddress);
+
+        uint256 addressMaturityMultiplier = getAddressMaturityMultiplier(targetAddress);
+        uint256 addressCompostMultiplier = getAddressCompostMultiplier(targetAddress);
 
         return (
             block.number,
