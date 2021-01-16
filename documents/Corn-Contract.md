@@ -14,7 +14,10 @@ Below we have covered the Corn smart contract in detail skipping the OpenZeppeli
 
 The Corn smart contract drives the business logic and is open sourced for review. Let's jump right into the smart contract code. We'll go through code in logical blocks.
 
-The first Crop token deployed to Kovan testnet is Corn, it can be found on [Etherscan](https://kovan.etherscan.io/address/0xEA4fB84Eef742690790D5E8d623b8CdE2d49E7c2#code).
+The first Crop token deployed is Corn, it can be found on:
+
+[Kovan](https://kovan.etherscan.io/address/0xEA4fB84Eef742690790D5E8d623b8CdE2d49E7c2#code)
+[Mainnet](https://etherscan.io/token/0x3CD1833Ce959E087D0eF0Cb45ed06BffE60F23Ba#code)
 
 Compilation Parameters: Solidity v0.6.9+commit.3e3065ac. Optimizations Enabled
 
