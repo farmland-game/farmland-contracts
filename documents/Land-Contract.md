@@ -2,7 +2,7 @@
 
 ![LAND](https://farmland-game.github.io/land.png)
 
-For the base LAND token we've kept it as simple and basic as possible. This token is a standard ERC-777 implementation and was deployed on Ethereum mainnet with fixed supply of 57,706,752 LAND. To bootstrap the ecosystem we will distribute the LAND will be released in several tranches, by continent:
+For the base LAND token we've kept it as simple and basic as possible. This token is a standard ERC-777 implementation and was deployed on Ethereum mainnet with fixed supply of 57,706,752 LAND. To bootstrap the ecosystem the Farmland team will distribute the LAND in several tranches, by continent:
 
 ## Continental Breakdown
 
