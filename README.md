@@ -20,6 +20,10 @@ OpenZeppelin code is at the heart of our tokens and we follow their security pra
 - [Detailed Land Smart Contract Documentation](https://github.com/farmland-game/farmland-contracts/tree/master/documents/Land-Contract.md)
 - [Land Contract](https://github.com/farmland-game/farmland-contracts/tree/master/contracts/Land.sol)
 
+### L2Land
+- [Detailed L2Land Smart Contract Documentation](https://github.com/farmland-game/farmland-contracts/tree/master/documents/L2Land-Contract.md)
+- [L2Land Contract](https://github.com/farmland-game/farmland-contracts/tree/master/contracts/L2Land.sol)
+
 ### Corn
 - [Detailed Corn Smart Contract Documentation](https://github.com/farmland-game/farmland-contracts/tree/master/documents/Corn-Contract.md)
 - [Corn Contract](https://github.com/farmland-game/farmland-contracts/tree/master/contracts/Corn.sol)
